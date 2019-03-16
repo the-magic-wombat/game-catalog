@@ -1,0 +1,10 @@
+C:\Users\yoana\Desktop\C#\GameCatalog\GameCatalog\bin\Debug\GameCatalog.exe.config
+C:\Users\yoana\Desktop\C#\GameCatalog\GameCatalog\bin\Debug\GameCatalog.exe
+C:\Users\yoana\Desktop\C#\GameCatalog\GameCatalog\bin\Debug\GameCatalog.pdb
+C:\Users\yoana\Desktop\C#\GameCatalog\GameCatalog\obj\Debug\GameCatalog.csprojResolveAssemblyReference.cache
+C:\Users\yoana\Desktop\C#\GameCatalog\GameCatalog\obj\Debug\GameCatalog.Form1.resources
+C:\Users\yoana\Desktop\C#\GameCatalog\GameCatalog\obj\Debug\GameCatalog.Properties.Resources.resources
+C:\Users\yoana\Desktop\C#\GameCatalog\GameCatalog\obj\Debug\GameCatalog.csproj.GenerateResource.cache
+C:\Users\yoana\Desktop\C#\GameCatalog\GameCatalog\obj\Debug\GameCatalog.csproj.CoreCompileInputs.cache
+C:\Users\yoana\Desktop\C#\GameCatalog\GameCatalog\obj\Debug\GameCatalog.exe
+C:\Users\yoana\Desktop\C#\GameCatalog\GameCatalog\obj\Debug\GameCatalog.pdb
