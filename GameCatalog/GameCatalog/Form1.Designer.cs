@@ -31,11 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.lbl_sign_in = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
-            this.usernameTxt = new System.Windows.Forms.TextBox();
-            this.passwordTxt = new System.Windows.Forms.TextBox();
+            this.tb_username = new System.Windows.Forms.TextBox();
+            this.tb_password = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -44,7 +43,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(303, 134);
+            this.label1.Location = new System.Drawing.Point(240, 201);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 18);
             this.label1.TabIndex = 0;
@@ -56,35 +55,24 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(304, 183);
+            this.label2.Location = new System.Drawing.Point(241, 250);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "password:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // linkLabel1
+            // lbl_sign_in
             // 
-            this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Location = new System.Drawing.Point(474, 232);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(39, 13);
-            this.linkLabel1.TabIndex = 2;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Sign in";
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel2.Location = new System.Drawing.Point(332, 328);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel2.TabIndex = 3;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "linkLabel2";
+            this.lbl_sign_in.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_sign_in.AutoSize = true;
+            this.lbl_sign_in.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_sign_in.Location = new System.Drawing.Point(411, 299);
+            this.lbl_sign_in.Name = "lbl_sign_in";
+            this.lbl_sign_in.Size = new System.Drawing.Size(39, 13);
+            this.lbl_sign_in.TabIndex = 2;
+            this.lbl_sign_in.TabStop = true;
+            this.lbl_sign_in.Text = "Sign in";
+            this.lbl_sign_in.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbl_sign_in_LinkClicked);
             // 
             // label3
             // 
@@ -93,49 +81,45 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label3.Location = new System.Drawing.Point(453, 57);
+            this.label3.Location = new System.Drawing.Point(390, 124);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 29);
             this.label3.TabIndex = 4;
             this.label3.Text = "Log in";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // usernameTxt
+            // tb_username
             // 
-            this.usernameTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.usernameTxt.Location = new System.Drawing.Point(409, 132);
-            this.usernameTxt.Name = "usernameTxt";
-            this.usernameTxt.Size = new System.Drawing.Size(180, 20);
-            this.usernameTxt.TabIndex = 6;
+            this.tb_username.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tb_username.Location = new System.Drawing.Point(346, 199);
+            this.tb_username.Name = "tb_username";
+            this.tb_username.Size = new System.Drawing.Size(180, 20);
+            this.tb_username.TabIndex = 6;
             // 
-            // passwordTxt
+            // tb_password
             // 
-            this.passwordTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.passwordTxt.Location = new System.Drawing.Point(409, 183);
-            this.passwordTxt.Name = "passwordTxt";
-            this.passwordTxt.Size = new System.Drawing.Size(180, 20);
-            this.passwordTxt.TabIndex = 7;
+            this.tb_password.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tb_password.Location = new System.Drawing.Point(346, 250);
+            this.tb_password.Name = "tb_password";
+            this.tb_password.Size = new System.Drawing.Size(180, 20);
+            this.tb_password.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.OrangeRed;
+            this.BackColor = System.Drawing.Color.Olive;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(875, 476);
-            this.Controls.Add(this.passwordTxt);
-            this.Controls.Add(this.usernameTxt);
+            this.Controls.Add(this.tb_password);
+            this.Controls.Add(this.tb_username);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.lbl_sign_in);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "GameCatalog";
+            this.Text = "Game Catalog";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -146,11 +130,10 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel lbl_sign_in;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox usernameTxt;
-        private System.Windows.Forms.TextBox passwordTxt;
+        private System.Windows.Forms.TextBox tb_username;
+        private System.Windows.Forms.TextBox tb_password;
     }
 }
 
