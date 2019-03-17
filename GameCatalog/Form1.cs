@@ -17,19 +17,30 @@ namespace GameCatalog
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void lbl_sign_in_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            string username = "name";
+            string password = "password";
+
+            if (tb_username.Text == username && tb_password.Text == password)
+            {
+                this.Hide();
+                Main main = new Main();
+                main.Show();
+                main.Focus();
+
+            }
+            else
+            {
+                tb_username.Clear();
+                tb_password.Clear();
+                MessageBox.Show("Please enter valid username and password");
+            }
         }
     }
 }
