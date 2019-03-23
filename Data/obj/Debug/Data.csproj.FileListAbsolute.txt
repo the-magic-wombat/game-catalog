@@ -10,3 +10,7 @@ C:\Users\yoana\Desktop\C#\GameCatalog\Data\obj\Debug\Data.csproj.CoreCompileInpu
 C:\Users\yoana\Desktop\C#\GameCatalog\Data\obj\Debug\Data.csproj.CopyComplete
 C:\Users\yoana\Desktop\C#\GameCatalog\Data\obj\Debug\Data.dll
 C:\Users\yoana\Desktop\C#\GameCatalog\Data\obj\Debug\Data.pdb
+H:\game-catalog\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+H:\game-catalog\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+H:\game-catalog\Data\obj\Debug\Data.dll
+H:\game-catalog\Data\obj\Debug\Data.pdb
