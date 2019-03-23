@@ -16,5 +16,6 @@ namespace Data
 
         }
         public DbSet<Game> Game { get; set; }
+        public DbSet<Account> Account { get; set; }
     }
 }

@@ -10,3 +10,5 @@ C:\Users\yoana\Desktop\C#\GameCatalog\Data\obj\Debug\Data.csproj.CoreCompileInpu
 C:\Users\yoana\Desktop\C#\GameCatalog\Data\obj\Debug\Data.csproj.CopyComplete
 C:\Users\yoana\Desktop\C#\GameCatalog\Data\obj\Debug\Data.dll
 C:\Users\yoana\Desktop\C#\GameCatalog\Data\obj\Debug\Data.pdb
+C:\Users\yoana\Desktop\C#\GameCatalog\Data\obj\Debug\Data.Migrations.GameDb.resources
+C:\Users\yoana\Desktop\C#\GameCatalog\Data\obj\Debug\Data.csproj.GenerateResource.cache

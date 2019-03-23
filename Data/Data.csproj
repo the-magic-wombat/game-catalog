@@ -47,15 +47,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountContext.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="GameContext.cs" />
-    <Compile Include="Models\Account.cs" />
+    <Compile Include="Migrations\201903230939578_GameDb.cs" />
+    <Compile Include="Migrations\201903230939578_GameDb.Designer.cs">
+      <DependentUpon>201903230939578_GameDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Game.cs" />
+    <Compile Include="Models\Account.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201903230939578_GameDb.resx">
+      <DependentUpon>201903230939578_GameDb.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

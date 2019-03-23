@@ -6,15 +6,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business.cs
+namespace Business
 {
     public class AccountBusiness
     {
-        private AccountContext accountContext;
+        private GameContext accountContext;
 
         public bool UsernameExist (string username)
         {
-            using (accountContext = new AccountContext())
+            using (accountContext = new GameContext())
             {
                 var item = accountContext.Account.Find(username);
                 if(item!=null)
@@ -27,7 +27,7 @@ namespace Business.cs
 
         public bool EmailExist(string email)
         {
-            using (accountContext = new AccountContext())
+            using (accountContext = new GameContext())
             {
                 var item = accountContext.Account.Find(email);
                 if (item != null)
@@ -40,7 +40,7 @@ namespace Business.cs
 
         public bool UsernameCorrect(string username)
         {
-            using (accountContext = new AccountContext())
+            using (accountContext = new GameContext())
             {
                 var item = accountContext.Account.Find(username);
                 if (item != null)
@@ -53,7 +53,7 @@ namespace Business.cs
 
         public bool PasswordCorrect(string password)
         {
-            using (accountContext = new AccountContext())
+            using (accountContext = new GameContext())
             {
                 var item = accountContext.Account.Find(password);
                 if (item != null)
@@ -66,7 +66,7 @@ namespace Business.cs
 
         public void Add(Account account)
         {
-            using (accountContext = new AccountContext())
+            using (accountContext = new GameContext())
             {
                 accountContext.Account.Add(account);
                 accountContext.SaveChanges();

@@ -6,11 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business.cs
+namespace Business
 {
-    class GameBusiness
+    public class GameBusiness
     {
         private GameContext gameContext;
+        private Game game;
 
         public List<Game> GetAll()
         {
@@ -66,7 +67,14 @@ namespace Business.cs
         {
             using (gameContext = new GameContext())
             {
-                foreach(var )
+                return gameContext.Game.SqlQuery("SELECT * FROM GameContext WHERE Developer = @developer", developer).ToList();
+            }
+        }
+        public List<Game> FindByGenre(string genre)
+        {
+            using (gameContext = new GameContext())
+            {
+                return gameContext.Game.SqlQuery("SELECT * FROM GameContext WHERE Genre LIKE %@genre%", genre).ToList();
             }
         }
     }

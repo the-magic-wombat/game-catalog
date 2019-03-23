@@ -1,4 +1,5 @@
 ﻿using System;
+using Business;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
+
 
 namespace GameCatalog
 {
@@ -19,15 +22,15 @@ namespace GameCatalog
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            tb_password.PasswordChar = '*';
         }
 
         private void lbl_sign_in_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            string username = "name";
-            string password = "password";
+           /* string username = "name";
+            string password = "password";*/
 
-            if (tb_username.Text == username && tb_password.Text == password)
+            if (UsernameCorrect(tb_username.Text) && PasswordCorrect(tb_password.Text))
             {
                 this.Hide();
                 Main main = new Main();

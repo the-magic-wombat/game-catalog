@@ -39,3 +39,9 @@ H:\game-catalog-master\game-catalog-master\GameCatalog\obj\Debug\GameCatalog.csp
 H:\game-catalog-master\game-catalog-master\GameCatalog\obj\Debug\GameCatalog.csproj.CoreCompileInputs.cache
 H:\game-catalog-master\game-catalog-master\GameCatalog\obj\Debug\GameCatalog.exe
 H:\game-catalog-master\game-catalog-master\GameCatalog\obj\Debug\GameCatalog.pdb
+C:\Users\yoana\Desktop\C#\GameCatalog\GameCatalog\bin\Debug\EntityFramework.dll
+C:\Users\yoana\Desktop\C#\GameCatalog\GameCatalog\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\yoana\Desktop\C#\GameCatalog\GameCatalog\bin\Debug\EntityFramework.xml
+C:\Users\yoana\Desktop\C#\GameCatalog\GameCatalog\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\yoana\Desktop\C#\GameCatalog\GameCatalog\obj\Debug\GameCatalog.Main.resources
+C:\Users\yoana\Desktop\C#\GameCatalog\GameCatalog\obj\Debug\GameCatalog.csproj.CopyComplete
