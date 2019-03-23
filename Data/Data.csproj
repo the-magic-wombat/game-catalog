@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="GameContext.cs" />
     <Compile Include="Migrations\201903230939578_GameDb.cs" />
     <Compile Include="Migrations\201903230939578_GameDb.Designer.cs">
@@ -55,9 +56,17 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\Account.cs" />
+=======
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Models\Game.cs" />
+    <Compile Include="Properties\AccountContext.cs" />
+>>>>>>> 164faddecab4a782b06bcbe28ab47ec798e789a1
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\GameContext.cs" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -66,5 +75,10 @@
       <DependentUpon>201903230939578_GameDb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+=======
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+>>>>>>> 164faddecab4a782b06bcbe28ab47ec798e789a1
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

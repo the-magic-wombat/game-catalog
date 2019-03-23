@@ -10,5 +10,12 @@ C:\Users\yoana\Desktop\C#\GameCatalog\Data\obj\Debug\Data.csproj.CoreCompileInpu
 C:\Users\yoana\Desktop\C#\GameCatalog\Data\obj\Debug\Data.csproj.CopyComplete
 C:\Users\yoana\Desktop\C#\GameCatalog\Data\obj\Debug\Data.dll
 C:\Users\yoana\Desktop\C#\GameCatalog\Data\obj\Debug\Data.pdb
+<<<<<<< HEAD
 C:\Users\yoana\Desktop\C#\GameCatalog\Data\obj\Debug\Data.Migrations.GameDb.resources
 C:\Users\yoana\Desktop\C#\GameCatalog\Data\obj\Debug\Data.csproj.GenerateResource.cache
+=======
+H:\game-catalog\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+H:\game-catalog\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+H:\game-catalog\Data\obj\Debug\Data.dll
+H:\game-catalog\Data\obj\Debug\Data.pdb
+>>>>>>> 164faddecab4a782b06bcbe28ab47ec798e789a1
