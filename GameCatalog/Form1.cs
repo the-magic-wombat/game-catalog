@@ -8,8 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-
+using Data;
 
 namespace GameCatalog
 {
@@ -23,6 +22,7 @@ namespace GameCatalog
         private void Form1_Load(object sender, EventArgs e)
         {
             tb_password.PasswordChar = '*';
+            UsernameExists()
         }
 
         private void lbl_sign_in_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -30,7 +30,7 @@ namespace GameCatalog
            /* string username = "name";
             string password = "password";*/
 
-            if (UsernameCorrect(tb_username.Text) && PasswordCorrect(tb_password.Text))
+            /*if (UsernameCorrect(tb_username.Text) && PasswordCorrect(tb_password.Text))
             {
                 this.Hide();
                 Main main = new Main();
@@ -43,7 +43,7 @@ namespace GameCatalog
                 tb_username.Clear();
                 tb_password.Clear();
                 MessageBox.Show("Please enter valid username and password");
-            }
+            }*/
         }
     }
 }
