@@ -11,7 +11,7 @@ namespace Data.Migrations
                 "dbo.Accounts",
                 c => new
                     {
-                        Id = c.Int(nullable: false, identity: true),
+                        Id = c.String(nullable: false, maxLength: 128),
                         Email = c.String(),
                         Username = c.String(),
                         Password = c.String(),
@@ -22,7 +22,7 @@ namespace Data.Migrations
                 "dbo.Games",
                 c => new
                     {
-                        Id = c.Int(nullable: false, identity: true),
+                        Id = c.String(nullable: false, maxLength: 128),
                         Name = c.String(),
                         Description = c.String(),
                         Link = c.String(),

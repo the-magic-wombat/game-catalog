@@ -18,6 +18,7 @@ namespace Data.Migrations
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
+
             context.Account.AddOrUpdate(
                 new Models.Account() { Email =  "ioana.miteva@hotmail.com", Username = "jojomomo", Password = "123987" }
                 );

@@ -32,9 +32,9 @@ namespace Business
                 var item = accountContext.Account.Find(email);
                 if (item != null)
                 {
-                    return false;
+                    return true;
                 }
-                return true;
+                return false;
             }
         }
 
