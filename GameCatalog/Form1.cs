@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Data;
-
+using Data.Models;
 namespace GameCatalog
 {
     public partial class Form1 : Form
@@ -49,9 +49,15 @@ namespace GameCatalog
                 MessageBox.Show("Please enter valid username and password");
             }*/
 
-            
+            /*Account testAccount = new Account();
+            testAccount.Id = "2";
+            testAccount.Email = "mail";
+            testAccount.Username = "username";
+            testAccount.Password = "password";
 
-            if(accountBusiness.EmailExist("email"))
+            accountBusiness.Add(testAccount);*/
+
+            if(accountBusiness.UsernameCorrect("username"))
             {
                 MessageBox.Show("Hi");
             }

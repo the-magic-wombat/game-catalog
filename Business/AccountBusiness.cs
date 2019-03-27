@@ -38,16 +38,16 @@ namespace Business
             }
         }
 
-        public bool UsernameCorrect(string username)
+        public bool UsernameCorrect(string username)    //working
         {
             using (accountContext = new GameContext())
             {
-                var item = accountContext.Account.Find(username);
+                var item = accountContext.Account.Where(i => i.Username == username).FirstOrDefault<Account>();    
                 if (item != null)
                 {
-                    return false;
+                    return true;
                 }
-                return true;
+                return false;
             }
         }
 
