@@ -61,6 +61,10 @@ namespace GameCatalog
             {
                 MessageBox.Show("Hi");
             }
+            else
+            {
+                MessageBox.Show("No hi");
+            }
         }
     }
 }

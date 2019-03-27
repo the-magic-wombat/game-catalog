@@ -34,9 +34,9 @@ C:\Users\Pavel\Documents\GitHub\game-catalog\Data\bin\Debug\EntityFramework.SqlS
 C:\Users\Pavel\Documents\GitHub\game-catalog\Data\bin\Debug\EntityFramework.xml
 C:\Users\Pavel\Documents\GitHub\game-catalog\Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Pavel\Documents\GitHub\game-catalog\Data\obj\Debug\Data.csprojAssemblyReference.cache
-C:\Users\Pavel\Documents\GitHub\game-catalog\Data\obj\Debug\Data.Migrations.GameDb.resources
-C:\Users\Pavel\Documents\GitHub\game-catalog\Data\obj\Debug\Data.csproj.GenerateResource.cache
 C:\Users\Pavel\Documents\GitHub\game-catalog\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
 C:\Users\Pavel\Documents\GitHub\game-catalog\Data\obj\Debug\Data.csproj.CopyComplete
 C:\Users\Pavel\Documents\GitHub\game-catalog\Data\obj\Debug\Data.dll
 C:\Users\Pavel\Documents\GitHub\game-catalog\Data\obj\Debug\Data.pdb
+C:\Users\Pavel\Documents\GitHub\game-catalog\Data\obj\Debug\Data.Migrations.GameDb.resources
+C:\Users\Pavel\Documents\GitHub\game-catalog\Data\obj\Debug\Data.csproj.GenerateResource.cache

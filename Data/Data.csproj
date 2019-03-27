@@ -48,9 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameContext.cs" />
-    <Compile Include="Migrations\201903230939578_GameDb.cs" />
-    <Compile Include="Migrations\201903230939578_GameDb.Designer.cs">
-      <DependentUpon>201903230939578_GameDb.cs</DependentUpon>
+    <Compile Include="Migrations\201903270911550_GameDb.cs" />
+    <Compile Include="Migrations\201903270911550_GameDb.Designer.cs">
+      <DependentUpon>201903270911550_GameDb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Game.cs" />
@@ -64,8 +64,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201903230939578_GameDb.resx">
-      <DependentUpon>201903230939578_GameDb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201903270911550_GameDb.resx">
+      <DependentUpon>201903270911550_GameDb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
