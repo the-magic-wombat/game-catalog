@@ -10,6 +10,8 @@ namespace Business
 {
     public class GameBusiness
     {
+        //TO DO: Fix all the functions - wrong use of .Find()
+
         private GameContext gameContext;
         private Game game;
 

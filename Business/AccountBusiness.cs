@@ -10,6 +10,8 @@ namespace Business
 {
     public class AccountBusiness
     {
+        //TO DO: Fix all the functions - wrong use of .Find()
+
         private GameContext accountContext;
 
         public bool UsernameExist (string username)

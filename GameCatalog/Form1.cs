@@ -25,8 +25,15 @@ namespace GameCatalog
         private void Form1_Load(object sender, EventArgs e)
         {
             tb_password.PasswordChar = '*';
-            
-            
+
+            if (accountBusiness.UsernameCorrect("username"))     //testing connection between GameCatalog and Business layers
+            {
+                MessageBox.Show("Hi");
+            }
+            else
+            {
+                MessageBox.Show("No hi");
+            }
         }
 
         private void lbl_sign_in_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -56,15 +63,7 @@ namespace GameCatalog
             testAccount.Password = "password";
 
             accountBusiness.Add(testAccount);*/
-
-            if(accountBusiness.UsernameCorrect("username"))
-            {
-                MessageBox.Show("Hi");
-            }
-            else
-            {
-                MessageBox.Show("No hi");
-            }
+           
         }
     }
 }
