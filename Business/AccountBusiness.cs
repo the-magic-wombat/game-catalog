@@ -14,7 +14,7 @@ namespace Business
 
         private GameContext accountContext;
 
-        public bool UsernameExist (string username)
+        /*public bool UsernameExist (string username)
         {
             using (accountContext = new GameContext())
             {
@@ -25,13 +25,13 @@ namespace Business
                 }
                 return true;
             }
-        }
+        }*/
 
         public bool EmailExist(string email)
         {
             using (accountContext = new GameContext())
             {
-                var item = accountContext.Account.Find(email);
+                var item = accountContext.Account.Where(i => i.Email == email).FirstOrDefault<Account>();
                 if (item != null)
                 {
                     return true;
@@ -57,12 +57,12 @@ namespace Business
         {
             using (accountContext = new GameContext())
             {
-                var item = accountContext.Account.Find(password);
+                var item = accountContext.Account.Where(i => i.Password == password).FirstOrDefault<Account>();
                 if (item != null)
                 {
-                    return false;
+                    return true;
                 }
-                return true;
+                return false;
             }
         }
 

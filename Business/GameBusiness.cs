@@ -13,7 +13,6 @@ namespace Business
         //TO DO: Fix all the functions - wrong use of .Find()
 
         private GameContext gameContext;
-        private Game game;
 
         public List<Game> GetAll()
         {
@@ -61,7 +60,7 @@ namespace Business
         {
             using (gameContext = new GameContext())
             {
-                return gameContext.Game.Find(name);
+                return gameContext.Game.Where(i => i.Name == name).FirstOrDefault<Game>();
             }
         }
 
@@ -69,14 +68,14 @@ namespace Business
         {
             using (gameContext = new GameContext())
             {
-                return gameContext.Game.SqlQuery("SELECT * FROM GameContext WHERE Developer = @developer", developer).ToList();
+                return gameContext.Game.Where(i => i.Developer == developer).ToList<Game>();
             }
         }
         public List<Game> FindByGenre(string genre)
         {
             using (gameContext = new GameContext())
             {
-                return gameContext.Game.SqlQuery("SELECT * FROM GameContext WHERE Genre LIKE %@genre%", genre).ToList();
+                return gameContext.Game.Where(i => i.Genre.Contains(genre)).ToList<Game>();
             }
         }
     }

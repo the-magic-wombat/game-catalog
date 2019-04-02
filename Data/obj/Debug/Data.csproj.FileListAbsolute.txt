@@ -40,3 +40,17 @@ C:\Users\Pavel\Documents\GitHub\game-catalog\Data\obj\Debug\Data.dll
 C:\Users\Pavel\Documents\GitHub\game-catalog\Data\obj\Debug\Data.pdb
 C:\Users\Pavel\Documents\GitHub\game-catalog\Data\obj\Debug\Data.Migrations.GameDb.resources
 C:\Users\Pavel\Documents\GitHub\game-catalog\Data\obj\Debug\Data.csproj.GenerateResource.cache
+C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\Data\bin\Debug\Data.dll.config
+C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\Data\bin\Debug\Data.dll
+C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\Data\bin\Debug\Data.pdb
+C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\Data\bin\Debug\EntityFramework.dll
+C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\Data\bin\Debug\EntityFramework.xml
+C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\Data\obj\Debug\Data.Migrations.GameDb.resources
+C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\Data\obj\Debug\Data.csproj.GenerateResource.cache
+C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\Data\obj\Debug\Data.dll
+C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\Data\obj\Debug\Data.pdb

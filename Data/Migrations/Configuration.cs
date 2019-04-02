@@ -20,9 +20,10 @@ namespace Data.Migrations
             //  to avoid creating duplicate seed data.
 
             context.Account.AddOrUpdate(
-                new Models.Account() { Email =  "ioana.miteva@hotmail.com", Username = "jojomomo", Password = "123987" }
+                new Models.Account() { Id = 1, Email = "ioana.miteva@hotmail.com", Username = "jojomomo", Password = "123987" }
                 );
-            context.SaveChanges();
+            base.Seed(context);
+            //context.SaveChanges();
         }
     }
 }

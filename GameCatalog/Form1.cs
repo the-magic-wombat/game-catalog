@@ -26,22 +26,22 @@ namespace GameCatalog
         {
             tb_password.PasswordChar = '*';
 
-            if (accountBusiness.UsernameCorrect("username"))     //testing connection between GameCatalog and Business layers
+            /*if (accountBusiness.UsernameCorrect("username"))     //testing connection between GameCatalog and Business layers
             {
                 MessageBox.Show("Hi");
             }
             else
             {
                 MessageBox.Show("No hi");
-            }
+            }*/
         }
 
         private void lbl_sign_in_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             /*string username = "name";
-            string password = "password";
+            string password = "password";*/
 
-            if (UsernameCorrect(tb_username.Text) && PasswordCorrect(tb_password.Text))
+            if (accountBusiness.UsernameCorrect(tb_username.Text) && accountBusiness.PasswordCorrect(tb_password.Text))
             {
                 this.Hide();
                 Main main = new Main();
@@ -54,7 +54,7 @@ namespace GameCatalog
                 tb_username.Clear();
                 tb_password.Clear();
                 MessageBox.Show("Please enter valid username and password");
-            }*/
+            }
 
             /*Account testAccount = new Account();
             testAccount.Id = "2";
