@@ -53,12 +53,12 @@ namespace Business
             }
         }
 
-        public bool PasswordCorrect(string password)
+        public bool PasswordCorrect(string password, string username)
         {
             using (accountContext = new GameContext())
             {
                 var item = accountContext.Account.Where(i => i.Password == password).FirstOrDefault<Account>();
-                if (item != null)
+                if (item != null && item.Username == username)
                 {
                     return true;
                 }

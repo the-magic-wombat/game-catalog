@@ -25,45 +25,24 @@ namespace GameCatalog
         private void Form1_Load(object sender, EventArgs e)
         {
             tb_password.PasswordChar = '*';
-
-            /*if (accountBusiness.UsernameCorrect("username"))     //testing connection between GameCatalog and Business layers
-            {
-                MessageBox.Show("Hi");
-            }
-            else
-            {
-                MessageBox.Show("No hi");
-            }*/
         }
 
         private void lbl_sign_in_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            /*string username = "name";
-            string password = "password";*/
 
-            if (accountBusiness.UsernameCorrect(tb_username.Text) && accountBusiness.PasswordCorrect(tb_password.Text))
+            if (accountBusiness.UsernameCorrect(tb_username.Text) && accountBusiness.PasswordCorrect(tb_password.Text, tb_username.Text))
             {
-                this.Hide();
+                //this.Hide();              
                 Main main = new Main();
                 main.Show();
-                main.Focus();
-
+                main.Focus();           
             }
             else
             {
                 tb_username.Clear();
                 tb_password.Clear();
                 MessageBox.Show("Please enter valid username and password");
-            }
-
-            /*Account testAccount = new Account();
-            testAccount.Id = "2";
-            testAccount.Email = "mail";
-            testAccount.Username = "username";
-            testAccount.Password = "password";
-
-            accountBusiness.Add(testAccount);*/
-           
+            }   
         }
     }
 }
