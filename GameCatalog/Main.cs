@@ -75,6 +75,12 @@ namespace GameCatalog
             pb_test.Image = Image.FromFile(absolutePath);
         }
 
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            AdminSettings adminSettings = new AdminSettings();
+            adminSettings.Show();
+        }
+
         private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
         {
 
@@ -103,6 +109,16 @@ namespace GameCatalog
             {
                 listBox_games.Items.Add(item.Name);
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

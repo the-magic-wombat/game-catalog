@@ -27,6 +27,19 @@ namespace Business
             }
         }*/
 
+        public bool IsAdmin(string username)
+        {
+            using (accountContext = new GameContext())
+            {
+                var item = accountContext.Account.Where(i => i.Username == username && i.Admin=="Admin").FirstOrDefault<Account>();
+                if (item != null)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+
         public bool EmailExist(string email)
         {
             using (accountContext = new GameContext())

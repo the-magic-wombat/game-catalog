@@ -28,12 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.pb_test = new System.Windows.Forms.PictureBox();
             this.listBox_games = new System.Windows.Forms.ListBox();
             this.btn_filter = new System.Windows.Forms.Button();
             this.comboBox_genre = new System.Windows.Forms.ComboBox();
             this.btn_clearFilter = new System.Windows.Forms.Button();
+            this.gameBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnAdmin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_test)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pb_test
@@ -82,21 +87,39 @@
             this.btn_clearFilter.UseVisualStyleBackColor = true;
             this.btn_clearFilter.Click += new System.EventHandler(this.btn_clearFilter_Click);
             // 
+            // gameBindingSource
+            // 
+            this.gameBindingSource.DataSource = typeof(Data.Models.Game);
+            // 
+            // btnAdmin
+            // 
+            this.btnAdmin.Location = new System.Drawing.Point(632, 10);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Size = new System.Drawing.Size(164, 25);
+            this.btnAdmin.TabIndex = 13;
+            this.btnAdmin.Text = "Admin Settings";
+            this.btnAdmin.UseVisualStyleBackColor = true;
+            this.btnAdmin.Visible = false;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(819, 519);
+            this.Controls.Add(this.btnAdmin);
             this.Controls.Add(this.btn_clearFilter);
             this.Controls.Add(this.comboBox_genre);
             this.Controls.Add(this.btn_filter);
             this.Controls.Add(this.listBox_games);
             this.Controls.Add(this.pb_test);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
-            this.Text = "Main";
+            this.Text = "Game Catalog";
             this.Load += new System.EventHandler(this.Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_test)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,5 +132,7 @@
         private System.Windows.Forms.Button btn_filter;
         private System.Windows.Forms.ComboBox comboBox_genre;
         private System.Windows.Forms.Button btn_clearFilter;
+        private System.Windows.Forms.BindingSource gameBindingSource;
+        public System.Windows.Forms.Button btnAdmin;
     }
 }

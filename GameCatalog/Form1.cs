@@ -34,8 +34,13 @@ namespace GameCatalog
             {
                 //this.Hide();              
                 Main main = new Main();
+                if(accountBusiness.IsAdmin(tb_username.Text))
+                {
+                    main.btnAdmin.Visible = true;
+                }
                 main.Show();
-                main.Focus();           
+                main.Focus();
+                
             }
             else
             {
