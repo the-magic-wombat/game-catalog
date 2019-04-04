@@ -26,7 +26,7 @@ namespace GameCatalog
         private void Main_Load(object sender, EventArgs e)
         {
             string absolutePath = Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(Application.ExecutablePath))), @"Images\", gameBusiness.FindByName("Team Fortress 2").Image);
-            pb_test.Image = Image.FromFile(absolutePath);
+            pb_picture.Image = Image.FromFile(absolutePath);
 
             List<Game> games = gameBusiness.GetAll();
 
@@ -35,8 +35,13 @@ namespace GameCatalog
                 listBox_games.Items.Add(item.Name);
             }
 
-            foreach(var item in games)
+            listBox_games.SelectedItem = listBox_games.Items[0];    //sets default selected item of the listbox to the first one
+
+            
+
+            foreach (var item in games)
             {
+                //fils genre filter
                 bool genreExists = false;
            
                 foreach (var genre in comboBox_genre.Items)
@@ -51,22 +56,11 @@ namespace GameCatalog
                 {
                     comboBox_genre.Items.Add(item.Genre);
                 }
-            }
-        }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
+                //fills developer filter
+                bool developerExists = false;
 
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string selectedItem = listBox_games.SelectedItem.ToString();
-
-            string absolutePath = Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(Application.ExecutablePath))), @"Images\", gameBusiness.FindByName(selectedItem).Image);
-            pb_test.Image = Image.FromFile(absolutePath);
-        }
-
+<<<<<<< HEAD
         private void button1_Click(object sender, EventArgs e)
         {
             string selectedItem = listBox_games.SelectedItem.ToString();
@@ -83,24 +77,74 @@ namespace GameCatalog
 
         private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
         {
+=======
+                foreach(var developer in comboBox_developer.Items)
+                {
+                    if((string)developer == item.Developer)
+                    {
+                        developerExists = true;
+                    }
+                }
+>>>>>>> 703a38a770507cefcdf7d8d0ee0c09674e8580bf
 
+                if(!developerExists)
+                {
+                    comboBox_developer.Items.Add(item.Developer);
+                }
+            }
         }
 
         private void btn_filter_Click(object sender, EventArgs e)
         {
             listBox_games.Items.Clear();
 
-            List<Game> games = gameBusiness.FindByGenre(comboBox_genre.Text);
-
+            List<Game> games = GameFilter();
+            
             foreach (var item in games)
             {
                 listBox_games.Items.Add(item.Name);
+            }
+
+            listBox_games.SelectedItem = listBox_games.Items[0];
+        }
+
+        private List<Game> GameFilter()
+        {
+            List<Game> games = gameBusiness.GetAll();
+            List<Game> games_filtered = new List<Game>();
+            
+            if(comboBox_genre.Text == "" && comboBox_developer.Text == "")
+            {
+                return games;
+            }
+            else if(comboBox_genre.Text != "" && comboBox_developer.Text == "")
+            {
+                games = gameBusiness.FindByGenre(comboBox_genre.Text);
+                return games;
+            }
+            else if(comboBox_genre.Text == "" && comboBox_developer.Text != "")
+            {
+                games = gameBusiness.FindByDeveloper(comboBox_developer.Text);
+                return games;
+            }
+            else
+            {
+                foreach(var game in games)
+                {
+                    if(game.Genre == comboBox_genre.Text && game.Developer == comboBox_developer.Text)
+                    {
+                        games_filtered.Add(game);
+                    }                  
+                }
+                return games_filtered;
             }
         }
 
         private void btn_clearFilter_Click(object sender, EventArgs e)
         {
             comboBox_genre.Text = "";
+            comboBox_developer.Text = "";
+
             listBox_games.Items.Clear();
 
             List<Game> games = gameBusiness.GetAll();
@@ -109,6 +153,28 @@ namespace GameCatalog
             {
                 listBox_games.Items.Add(item.Name);
             }
+
+            listBox_games.SelectedItem = listBox_games.Items[0];
+        }
+
+        private void listBox_games_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Game selectedGame = gameBusiness.FindByName(listBox_games.SelectedItem.ToString());
+
+            //changes items to the selected game's ones        
+            string absolutePath = Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(Application.ExecutablePath))), @"Images\", selectedGame.Image);
+            pb_picture.Image = Image.FromFile(absolutePath);
+            lb_game_title.Text = selectedGame.Name;
+            lb_game_description.Text = selectedGame.Description;
+            lb_game_developer.Text = "Developer: " + selectedGame.Developer;
+            lb_game_release_date.Text = "Release Date: " + selectedGame.Date;
+            lb_game_genre.Text = "Genre: " + selectedGame.Genre;
+        }
+
+        private void lb_game_link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Game selectedGame = gameBusiness.FindByName(listBox_games.SelectedItem.ToString());
+            System.Diagnostics.Process.Start(selectedGame.Link);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
