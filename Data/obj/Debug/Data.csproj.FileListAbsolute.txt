@@ -54,16 +54,3 @@ C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\Data\obj\Debug
 C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\Data\obj\Debug\Data.csproj.CopyComplete
 C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\Data\obj\Debug\Data.dll
 C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\Data\obj\Debug\Data.pdb
-C:\Users\Pavel\Desktop\game-catalog-703a38a770507cefcdf7d8d0ee0c09674e8580bf\Data\bin\Debug\Data.dll.config
-C:\Users\Pavel\Desktop\game-catalog-703a38a770507cefcdf7d8d0ee0c09674e8580bf\Data\bin\Debug\Data.dll
-C:\Users\Pavel\Desktop\game-catalog-703a38a770507cefcdf7d8d0ee0c09674e8580bf\Data\bin\Debug\Data.pdb
-C:\Users\Pavel\Desktop\game-catalog-703a38a770507cefcdf7d8d0ee0c09674e8580bf\Data\bin\Debug\EntityFramework.dll
-C:\Users\Pavel\Desktop\game-catalog-703a38a770507cefcdf7d8d0ee0c09674e8580bf\Data\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Pavel\Desktop\game-catalog-703a38a770507cefcdf7d8d0ee0c09674e8580bf\Data\bin\Debug\EntityFramework.xml
-C:\Users\Pavel\Desktop\game-catalog-703a38a770507cefcdf7d8d0ee0c09674e8580bf\Data\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Pavel\Desktop\game-catalog-703a38a770507cefcdf7d8d0ee0c09674e8580bf\Data\obj\Debug\Data.Migrations.GameDb.resources
-C:\Users\Pavel\Desktop\game-catalog-703a38a770507cefcdf7d8d0ee0c09674e8580bf\Data\obj\Debug\Data.csproj.GenerateResource.cache
-C:\Users\Pavel\Desktop\game-catalog-703a38a770507cefcdf7d8d0ee0c09674e8580bf\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
-C:\Users\Pavel\Desktop\game-catalog-703a38a770507cefcdf7d8d0ee0c09674e8580bf\Data\obj\Debug\Data.csproj.CopyComplete
-C:\Users\Pavel\Desktop\game-catalog-703a38a770507cefcdf7d8d0ee0c09674e8580bf\Data\obj\Debug\Data.dll
-C:\Users\Pavel\Desktop\game-catalog-703a38a770507cefcdf7d8d0ee0c09674e8580bf\Data\obj\Debug\Data.pdb

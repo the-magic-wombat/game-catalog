@@ -12,12 +12,12 @@ using Data;
 using Data.Models;
 namespace GameCatalog
 {
-    public partial class LogInWindow : Form
+    public partial class Form1 : Form
     {
         private GameBusiness gameBusiness = new GameBusiness();
         private AccountBusiness accountBusiness = new AccountBusiness();
 
-        public LogInWindow()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -31,11 +31,11 @@ namespace GameCatalog
         {
 
             if (accountBusiness.UsernameCorrect(tb_username.Text) && accountBusiness.PasswordCorrect(tb_password.Text, tb_username.Text))
-            {                       
+            {
+                //this.Hide();              
                 Main main = new Main();
-                this.Hide();
-                main.ShowDialog();
-                this.Close();
+                main.Show();
+                main.Focus();           
             }
             else
             {
