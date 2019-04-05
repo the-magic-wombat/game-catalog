@@ -132,9 +132,9 @@
             // panel_left
             // 
             this.panel_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(45)))), ((int)(((byte)(58)))));
-            this.panel_left.Controls.Add(this.listBox_games);
             this.panel_left.Controls.Add(this.comboBox_developer);
             this.panel_left.Controls.Add(this.btn_filter);
+            this.panel_left.Controls.Add(this.listBox_games);
             this.panel_left.Controls.Add(this.comboBox_genre);
             this.panel_left.Controls.Add(this.btn_clearFilter);
             this.panel_left.Dock = System.Windows.Forms.DockStyle.Left;
@@ -155,7 +155,7 @@
             // 
             // pb_picture
             // 
-            this.pb_picture.Location = new System.Drawing.Point(195, 55);
+            this.pb_picture.Location = new System.Drawing.Point(195, 51);
             this.pb_picture.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pb_picture.Name = "pb_picture";
             this.pb_picture.Size = new System.Drawing.Size(460, 215);
@@ -169,7 +169,7 @@
             this.lb_game_title.AutoSize = true;
             this.lb_game_title.Font = new System.Drawing.Font("Tahoma", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lb_game_title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
-            this.lb_game_title.Location = new System.Drawing.Point(191, 12);
+            this.lb_game_title.Location = new System.Drawing.Point(189, 10);
             this.lb_game_title.Name = "lb_game_title";
             this.lb_game_title.Size = new System.Drawing.Size(66, 33);
             this.lb_game_title.TabIndex = 10;
@@ -179,7 +179,7 @@
             // 
             this.lb_game_description.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lb_game_description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
-            this.lb_game_description.Location = new System.Drawing.Point(191, 285);
+            this.lb_game_description.Location = new System.Drawing.Point(191, 281);
             this.lb_game_description.Name = "lb_game_description";
             this.lb_game_description.Size = new System.Drawing.Size(460, 130);
             this.lb_game_description.TabIndex = 11;
@@ -226,7 +226,6 @@
             this.lb_game_link.TabIndex = 16;
             this.lb_game_link.TabStop = true;
             this.lb_game_link.Text = "Official Webite";
-            this.lb_game_link.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(193)))), ((int)(((byte)(242)))));
             this.lb_game_link.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lb_game_link_LinkClicked);
             // 
             // panel1
@@ -271,10 +270,8 @@
             this.Controls.Add(this.panel_left);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MaximizeBox = false;
             this.Name = "Main";
             this.Text = "Game Catalog";
             this.Load += new System.EventHandler(this.Main_Load);

@@ -81,6 +81,7 @@ C:\Users\Pavel\Documents\GitHub\game-catalog\GameCatalog\bin\Debug\Data.dll.conf
 C:\Users\Pavel\Documents\GitHub\game-catalog\GameCatalog\bin\Debug\EntityFramework.xml
 C:\Users\Pavel\Documents\GitHub\game-catalog\GameCatalog\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Pavel\Documents\GitHub\game-catalog\GameCatalog\obj\Debug\GameCatalog.csprojAssemblyReference.cache
+C:\Users\Pavel\Documents\GitHub\game-catalog\GameCatalog\obj\Debug\GameCatalog.Form1.resources
 C:\Users\Pavel\Documents\GitHub\game-catalog\GameCatalog\obj\Debug\GameCatalog.Main.resources
 C:\Users\Pavel\Documents\GitHub\game-catalog\GameCatalog\obj\Debug\GameCatalog.Properties.Resources.resources
 C:\Users\Pavel\Documents\GitHub\game-catalog\GameCatalog\obj\Debug\GameCatalog.csproj.GenerateResource.cache
@@ -111,6 +112,7 @@ C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\GameCatalog\ob
 C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\GameCatalog\obj\Debug\GameCatalog.exe
 C:\Users\yoana\Desktop\GC\game-catalog-master\game-catalog-master\GameCatalog\obj\Debug\GameCatalog.pdb
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\yoana\Documents\GitHub\game-catalog\GameCatalog\bin\Debug\GameCatalog.exe.config
 C:\Users\yoana\Documents\GitHub\game-catalog\GameCatalog\bin\Debug\GameCatalog.exe
 C:\Users\yoana\Documents\GitHub\game-catalog\GameCatalog\bin\Debug\GameCatalog.pdb
@@ -137,3 +139,5 @@ C:\Users\yoana\Documents\GitHub\game-catalog\GameCatalog\obj\Debug\GameCatalog.A
 =======
 C:\Users\Pavel\Documents\GitHub\game-catalog\GameCatalog\obj\Debug\GameCatalog.LogInWindow.resources
 >>>>>>> 703a38a770507cefcdf7d8d0ee0c09674e8580bf
+=======
+>>>>>>> parent of 703a38a... Made a better log in window
