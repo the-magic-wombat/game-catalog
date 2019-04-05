@@ -15,8 +15,7 @@ namespace Data.Migrations
                         Email = c.String(),
                         Username = c.String(),
                         Password = c.String(),
-                        Admin = c.String(nullable: false, defaultValueSql: "Not Admin"),
-                })
+                    })
                 .PrimaryKey(t => t.Id);
             
             CreateTable(
