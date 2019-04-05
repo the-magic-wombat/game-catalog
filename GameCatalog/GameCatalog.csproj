@@ -54,6 +54,10 @@
   </ItemGroup>
   <ItemGroup>
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of f517bac... Added Admin Settings
     <Compile Include="AdminSettings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,13 +65,19 @@
       <DependentUpon>AdminSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
+<<<<<<< HEAD
 =======
     <Compile Include="LogInWindow.cs">
 >>>>>>> 703a38a770507cefcdf7d8d0ee0c09674e8580bf
+=======
+    <Compile Include="Form1.cs">
+>>>>>>> parent of 703a38a... Made a better log in window
+=======
+>>>>>>> parent of f517bac... Added Admin Settings
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LogInWindow.Designer.cs">
-      <DependentUpon>LogInWindow.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -78,15 +88,26 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of f517bac... Added Admin Settings
     <EmbeddedResource Include="AdminSettings.resx">
       <DependentUpon>AdminSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+<<<<<<< HEAD
 =======
     <EmbeddedResource Include="LogInWindow.resx">
       <DependentUpon>LogInWindow.cs</DependentUpon>
 >>>>>>> 703a38a770507cefcdf7d8d0ee0c09674e8580bf
+=======
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+>>>>>>> parent of 703a38a... Made a better log in window
+=======
+>>>>>>> parent of f517bac... Added Admin Settings
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

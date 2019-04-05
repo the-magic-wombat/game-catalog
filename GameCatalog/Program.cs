@@ -16,7 +16,7 @@ namespace GameCatalog
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LogInWindow());
+            Application.Run(new Form1());
         }
     }
 }
